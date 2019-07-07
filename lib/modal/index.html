@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Avgrund - A modal UI concept</title>
+
+		<meta name="description" content="A modal concept which aims to give a sense of depth between the page and modal layers">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="viewport" content="width=800, user-scalable=no">
+
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+		<link rel="stylesheet" href="css/demo.css">
+		<link rel="stylesheet" href="css/avgrund.css">
+
+		<script>
+			function openDialog() {
+				Avgrund.show( "#default-popup" );
+			}
+			function closeDialog() {
+				Avgrund.hide();
+			}
+		</script>
+
+	</head>
+
+	<body>
+
+		<aside id="default-popup" class="avgrund-popup">
+			<div id="titulo-modal-large">
+				<h2>That's all, folks</h2>
+			</div>
+			<div id="conteudo-dialog-large">
+				<p>
+					You can hit ESC or click outside to close the modal. Give it a go to see the reverse transition.
+				</p>
+				<p>
+					If you like this you would probably enjoy <a href="http://lab.hakim.se/meny">Meny</a>, <a href="http://lab.hakim.se/reveal-js">reveal.js</a> and <a href="http://lab.hakim.se/scroll-effects">stroll.js</a>.
+				</p>
+
+				<input type="" name="">
+				
+			</div>
+			<div id="footer-dialog-large">
+				<button onclick="javascript:closeDialog();">Close</button>
+			</div>
+
+		</aside>
+
+		<button onclick="javascript:openDialog();">Open modal</button>
+
+		<div class="avgrund-cover"></div>
+
+		<script type="text/javascript" src="js/avgrund.js"></script>
+
+</html>

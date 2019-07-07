@@ -233,7 +233,9 @@
     display: -webkit-box;
   }
 </style>
+
 <!-- Adicionando novos graficos -->
+
 <div class="box box-info">
             <div class="box-header with-border">
               <h3 class="box-title">Line Chart</h3>
